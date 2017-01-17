@@ -1,4 +1,4 @@
-Kimsufi/So-you-Start Avaliability Crawler
+  Kimsufi/So-you-Start Avaliability Crawler
 ============================
 
 > Crawler that will notify you when Kimsufi servers (or So-you-Start, or OVH) become available for purchase.
@@ -39,6 +39,7 @@ Set it up
     - `"pushover"`: send Pushover message, requires account - needs chump
     - `"pushbullet"`: send Pushbullet message, requires account - needs pushbullet
     - `"freemobile"`: sends sms to freemobile customer, requires account - needs requests
+    - `"alertover"`: send alertover message, requires sendsource and receiver IDs 
 
   - `to_email`: your email to receive notifications
   - `from_email`: email account of the crawler.
@@ -48,6 +49,8 @@ Set it up
   - `pushbullet_apikey`: your Pushbullet API key, notification sent to all devices.
   - `freemobile_username`: your freemobile login
   - `freemobile_key`: your freemobile sms notification key
+  - `alertover_source`: your alertover sendsource ID 
+  - `alertover_receiver`: your alertover receiver ID 
 
 - Crawler runs on Python 2.7+ and Tornado framework 4.0+. Assuming that you already have Python/pip, just get Tornado and the notifier dependencies with `sudo pip install -r requirements.txt`. You can also set up virtualenv if you like.
 - Run with `python crawler.py`. If no error messages come, you're ready.

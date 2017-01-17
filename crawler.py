@@ -176,6 +176,7 @@ if __name__ == "__main__":
         'pushbullet': 'notifiers.pushbullet_notifier.PushbulletNotifier',
         'file': 'notifiers.file_notifier.FileNotifier',
         'freemobile': 'notifiers.freemobile_notifier.FreemobileNotifier',
+        'alertover' : 'notifiers.alertover_notifier.AlertoverNotifier',
     }
     # Select notifier, 'email' by default
     if 'notifier' not in _CONFIG:
