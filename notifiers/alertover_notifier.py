@@ -10,8 +10,8 @@ class AlertoverNotifier(Notifier):
     """Notifier class to work with Alertover"""
 
     def __init__(self, config):
-        self.source = config.get('alterover_source', '')            
-        self.receiver = config.get('alterover_receiver', '')
+        self.source = config.get('alertover_source', 'debug')            
+        self.receiver = config.get('alertover_receiver', '')
 
         super(AlertoverNotifier, self).__init__(config)
     
